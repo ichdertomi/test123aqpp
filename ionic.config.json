@@ -2,5 +2,7 @@
   "name": "InAppBrowserDemo",
   "app_id": "210bf9b0",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

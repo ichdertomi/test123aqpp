@@ -6,6 +6,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { BackgroundGeolocation, BackgroundGeolocationConfig, BackgroundGeolocationResponse } from '@ionic-native/background-geolocation';
+
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+import { BackgroundMode } from '@ionic-native/background-mode';
+
+import { Dialogs } from '@ionic-native/dialogs';
+
+import { PhonegapLocalNotification } from '@ionic-native/phonegap-local-notification';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +34,11 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+	InAppBrowser,
+	BackgroundGeolocation,
+	BackgroundMode,
+	Dialogs,
+	PhonegapLocalNotification,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
